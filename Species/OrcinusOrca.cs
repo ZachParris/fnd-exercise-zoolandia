@@ -5,13 +5,13 @@ namespace Zoolandia.Species
     //orcas
     public class OrcinusOrca : Animal
     {
-           public OrcinusOrcas(string name) : base(name)
+           public OrcinusOrca(string name, string size) : base(name, size)
         {
             //dont need to do anything here!
         }
         public override string Swim(int numberOfLaps)
         {
-            string animalSwim = base.Eat(3);
+            string animalSwim = base.Swim(3);
             return animalSwim + "glub glub glub";
         }
 

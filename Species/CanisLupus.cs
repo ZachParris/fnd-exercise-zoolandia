@@ -5,18 +5,18 @@ namespace Zoolandia.Species
     //Woofs
     public class CanisLupus : Animal
     {
-           public CanisLupus(string name) : base(name)
+           public CanisLupus(string name, string size) : base(name, size)
         {
             //dont need to do anything here!
         }
-        public override string Hunt(int numberOfHunts)
+        public override string Growl(int numberOfGrowls)
         {
-            string animalHunt = base.Hunt(9);
+            string animalHunt = base.Growl(9);
             return animalHunt + "Grrr";
         }
 
-        public string Hunt(){
-            return "Sniff Sniff Sniff";
+        public string Growl(){
+            return "BAM";
         }
 
         public string Welcome (string name)

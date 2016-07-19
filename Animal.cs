@@ -2,35 +2,32 @@ using System;
 
 namespace Zoolandia
 {
-    public class Animal
+    public abstract class Animal
     {
-        public Animal (string name)
+        public Animal (string name, string size)
         {
             this.Name = name;
+            this.Size = size;
         }
         public string Name {get; set;}
+        public string Size {get; set;}
 
-        // public Animal (string type)
-        // {
-        //     this.Type = type;
-        // }
-        // public string Type {get; set;}
 
         public virtual string Eat(int numberOfFoodz)
         {
-            return "Yum";
+            return "Yum ";
         }
         public virtual string Swim(int numberOfLaps)
         {
-            return "Glub Glub";
+            return " Glub ";
         }
-        public virtual string Hunt(int numberOfHunts)
+        public virtual string Growl(int numberOfGrowls)
         {
-            return "Grr";
+            return "Wow ";
         }
         public virtual string Sleep(int numberOfNaps)
         {
-            return "Zzz";
+            return "Zzz ";
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Zoolandia.Species
     //bears
     public class Ursidaes : Animal 
     {
-           public Ursidaes(string name) : base(name)
+           public Ursidaes(string name, string size) : base(name, size)
         {
             //dont need to do anything here!
         }
@@ -19,16 +19,16 @@ namespace Zoolandia.Species
             return "Snore";
         }
 
-        public string Classifications (string type)
-        {
-            this.Type = type;
-            return Classifications();
-        }
+        // public string Classifications (string size)
+        // {
+        //     this.Size = size;
+        //     return Classifications();
+        // }
 
-        public string Classifications()
-        {
-            return "This bear is a " + this.Type + " bear.";
-        }
+        // public string Classifications()
+        // {
+        //     return "This bear is a " + this.Size + " bear.";
+        // }
 
     }
 }

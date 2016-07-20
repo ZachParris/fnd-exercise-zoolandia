@@ -11,21 +11,21 @@ namespace Zoolandia
         }
         public string Name {get; set;}
         public string Size {get; set;}
-
-
+        
+        
         public virtual string Eat(int numberOfFoodz)
         {
             return "Yum ";
         }
-        public virtual string Swim(int numberOfLaps)
+        public virtual string Swim()
         {
             return " Glub ";
         }
-        public virtual string Growl(int numberOfGrowls)
+        public virtual string Growl()
         {
             return "Wow ";
         }
-        public virtual string Sleep(int numberOfNaps)
+        public virtual string Sleep()
         {
             return "Zzz ";
         }

@@ -9,26 +9,15 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
-        public override string Sleep(int numberOfNaps)
+        public override string Sleep()
         {
-            string animalSleep = base.Sleep(7);
+            string animalSleep = base.Sleep();
             return animalSleep + "Zzz";
         }
 
-        public string Sleep(){
-            return "Snore";
+        public string Hunt(){
+            return "The " + this.Size + this.Name + " bear is hunting you!";
         }
-
-        // public string Classifications (string size)
-        // {
-        //     this.Size = size;
-        //     return Classifications();
-        // }
-
-        // public string Classifications()
-        // {
-        //     return "This bear is a " + this.Size + " bear.";
-        // }
 
     }
 }

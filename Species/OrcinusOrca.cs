@@ -9,25 +9,17 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
-        public override string Swim(int numberOfLaps)
+        public override string Swim()
         {
-            string animalSwim = base.Swim(3);
-            return animalSwim + "glub glub glub";
+            string animalSwim = base.Swim();
+            return animalSwim + "glub glub";
+        }
+    
+        public string Jump()
+        {
+           return "Free " + this.Name + " LEAPS over the wall to freedom as the boy cheers"; 
         }
 
-        public string Swim(){
-            return "Shwoosh";
-        }
-
-        public string Welcome (string name)
-        {
-            this.Name = name;
-            return Welcome();
-        }
-
-        public string Welcome()
-        {
-            return "Welcome, " + this.Name;
-        }
+      
     }
 }

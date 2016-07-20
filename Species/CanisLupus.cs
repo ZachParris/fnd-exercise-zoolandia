@@ -9,26 +9,27 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
-        public override string Growl(int numberOfGrowls)
+        public override string Growl()
         {
-            string animalHunt = base.Growl(9);
+            string animalHunt = base.Growl();
             return animalHunt + "Grrr";
         }
 
-        public string Growl(){
-            return "BAM";
+        public override string Eat(int numberOfFoodz)
+        {
+            string animalEat = base.Eat(3);
+            return animalEat + "chomp!";
         }
 
-        public string Welcome (string name)
-        {
-            this.Name = name;
-            return Welcome();
+        public string Eat(){
+            return "I don't know what I just ate, but it was good";
         }
 
-        public string Welcome()
+        public string Run()
         {
-            return "Welcome, " + this.Name;
+            return " keeps running";
         }
+
 
     }
 }

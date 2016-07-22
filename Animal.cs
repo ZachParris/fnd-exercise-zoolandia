@@ -11,6 +11,7 @@ namespace Zoolandia
         }
         public string Name {get; set;}
         public string Size {get; set;}
+        public string Genus {get; set;}
         
         
         public virtual string Eat(int numberOfFoodz)
@@ -25,7 +26,7 @@ namespace Zoolandia
         {
             return "Wow ";
         }
-        public virtual string Sleep()
+        public virtual string Sleep(int hoursOfSleep, string nap)
         {
             return "Zzz ";
         }

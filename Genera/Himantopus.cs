@@ -39,6 +39,14 @@ namespace Zoolandia.Genera
         {
             return "creeps";
         }
+        public virtual string Swim (string swim)
+        {
+            return "backstrokes";
+        }
+        public virtual int Hops (int numberOfHops)
+        {
+            return 0;
+        }
          
         }
     }

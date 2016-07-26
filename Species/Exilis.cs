@@ -8,5 +8,12 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
+        public override int Age (int animalAge)
+        {
+            return 4;
+        }
+        public override string Crawl (){
+            return "Sneaks away";
+        }
     }
 }

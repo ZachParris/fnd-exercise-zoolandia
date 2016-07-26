@@ -11,5 +11,12 @@ namespace Zoolandia.Species
         public override int Mass (int bodyMass){
             return 0;
         }
+        public string Eat(){
+            return "I don't know what I just ate, but it was good";
+        }
+        public override string Swim(string swim){
+            return "this.name the otter does the backstroke"
+        }
+
     }
 }

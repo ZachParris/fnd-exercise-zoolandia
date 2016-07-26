@@ -20,19 +20,19 @@ namespace Zoolandia.Genera
             return Crawl();
         }
 
-        public string Crawl()
+        public virtual string Crawl()
         {
             return "The " + this.Name + " is getting away!";
         }
 
-        public virtual double Smell (double animalSmell)
+        public virtual int Age (int animalAge)
         {
-            return animalSmell;
+            return 0;
         }
 
-        public virtual int Mass (int animalMass)
+        public virtual double Mass (double animalMass)
         {
-            return animalMass;
+            return 0.0;
         }
        
      

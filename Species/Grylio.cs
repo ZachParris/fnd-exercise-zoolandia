@@ -8,5 +8,8 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
+        public override int Hops(int numberOfHops){
+            return 0;
+        }
     }
 }

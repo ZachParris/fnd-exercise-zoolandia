@@ -1,17 +1,17 @@
-using System;
+using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
     //bears
-    public class Ursidaes : Animal 
+    public class Ursidaes : Scolopax 
     {
            public Ursidaes(string name, string size) : base(name, size)
         {
             //dont need to do anything here!
         }
-        public override string Sleep()
+        public override string Sleep(int hoursOfSleep, string nap)
         {
-            string animalSleep = base.Sleep();
+            string animalSleep = base.Sleep(8, "zzz");
             return animalSleep + "Zzz";
         }
 

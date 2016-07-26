@@ -17,6 +17,9 @@ namespace Zoolandia
             Console.WriteLine(Joe.Welcome("Joe"));
             Console.WriteLine(Joe.Name);
 
+            Mississippiensis Alligator = new Mississippiensis("Gator", "Big");
+            Console.WriteLine(Alligator.Name);
+
             Console.ReadLine();
         }
     }

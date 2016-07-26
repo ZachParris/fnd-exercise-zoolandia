@@ -1,5 +1,3 @@
-using System;
-
 namespace Zoolandia
 {
     public abstract class Animal
@@ -12,21 +10,14 @@ namespace Zoolandia
         public string Name {get; set;}
         public string Size {get; set;}
         public string Genus {get; set;}
+        public string ScientificName {get; set;}
         
         
         public virtual string Eat(int numberOfFoodz)
         {
             return "Yum ";
         }
-        public virtual string Swim()
-        {
-            return " Glub ";
-        }
-        public virtual string Growl()
-        {
-            return "Wow ";
-        }
-        public virtual string Sleep(int hoursOfSleep, string nap)
+        public virtual string Sleep(int hoursOfSleep)
         {
             return "Zzz ";
         }

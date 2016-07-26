@@ -1,9 +1,9 @@
-using System;
+using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
     //orcas
-    public class OrcinusOrca : Animal
+    public class OrcinusOrca : Scolopax
     {
            public OrcinusOrca(string name, string size) : base(name, size)
         {

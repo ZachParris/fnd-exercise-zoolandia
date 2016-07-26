@@ -8,5 +8,7 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
+        public string Smell;
+        public int Age;
     }
 }

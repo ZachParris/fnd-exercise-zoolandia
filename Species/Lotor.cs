@@ -8,5 +8,8 @@ namespace Zoolandia.Species
         {
             //dont need to do anything here!
         }
+        public override string Creep (string creep){
+            return "creeps around";
+        }
     }
 }

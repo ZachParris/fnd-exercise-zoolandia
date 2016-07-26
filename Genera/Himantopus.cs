@@ -35,6 +35,10 @@ namespace Zoolandia.Genera
         {
             return animalMass;
         }
+        public virtual string Creep (string creep)
+        {
+            return "creeps";
+        }
          
         }
     }

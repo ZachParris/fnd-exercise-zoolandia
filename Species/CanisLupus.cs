@@ -1,9 +1,9 @@
-using System;
+using Zoolandia.Genera;
 
 namespace Zoolandia.Species
 {
     //Woofs
-    public class CanisLupus : Animal
+    public class CanisLupus : Scolopax
     {
            public CanisLupus(string name, string size) : base(name, size)
         {

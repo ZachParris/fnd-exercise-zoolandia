@@ -1,8 +1,7 @@
-using System;
-
+using Zoolandia.Genera;
 namespace Zoolandia.Species
 {
-    public class AilurusFulgens : Animal
+    public class AilurusFulgens : Scolopax
     {
         public AilurusFulgens(string name, string size) : base(name, size)
         {

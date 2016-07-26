@@ -1,6 +1,5 @@
-//This is a Genus that is taking on 5 species (Lotor, vulpes, Canadensis, grylio, mississippiensis)
+//This is a Genus that is taking on 5 species (Lotor(raccoon), vulpes(fox), Canadensis(otter), grylio(frog), mississippiensis(gator))
 
-using System;
 
 namespace Zoolandia.Genera
 {
@@ -9,5 +8,33 @@ namespace Zoolandia.Genera
         public Himantopus(string name, string size) : base (name, size){
             this.Genus = "Himantopus";
         }
+
+          public override string Eat(int numberOfFoodz)
+        {
+            string animalEat = base.Eat(2);
+            return animalEat = "nom nom";
+        }
+
+        public string Hunt (string name)
+        {
+            this.Name = name;
+            return Hunt();
+        }
+
+        public string Hunt()
+        {
+            return "The " + this.Name + " is hunting you!";
+        }
+
+        public virtual double Length (double animalLength)
+        {
+            return animalLength;
+        }
+
+        public virtual int Mass (int animalMass)
+        {
+            return animalMass;
+        }
+         
+        }
     }
-}

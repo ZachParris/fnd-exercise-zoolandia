@@ -1,13 +1,13 @@
 using Zoolandia.Genera;
 
-namespace Zoolandia.Species
+namespace Zoolandia.Animals.Genera
 {
     //bears
-    public class Ursidaes : Scolopax 
+    public class Bears : Ursus 
     {
-           public Ursidaes(string name, string size) : base(name, size)
+           public Bears (string name) : base(name)
         {
-            //dont need to do anything here!
+            this.CommonName = "Grizzly";
         }
         public override string Sleep(int hoursOfSleep, string nap)
         {

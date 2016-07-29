@@ -1,20 +1,15 @@
-using Zoolandia.Genera;
+using Zoolandia.Animals.Genera;
+//wolf
 
-namespace Zoolandia.Species
+namespace Zoolandia.Animals.Species
 {
     //Woofs
-    public class CanisLupus : Scolopax
+    public class CanisLupus : Canis
     {
-           public CanisLupus(string name, string size) : base(name, size)
+           public CanisLupus(string name) : base(name)
         {
             //dont need to do anything here!
         }
-        public override string Growl()
-        {
-            string animalHunt = base.Growl();
-            return animalHunt + "Grrr";
-        }
-
         public override string Eat(int numberOfFoodz)
         {
             string animalEat = base.Eat(3);

@@ -1,9 +1,10 @@
 using Zoolandia.Genera;
-namespace Zoolandia.Species
+//red panda
+namespace Zoolandia.Animals.Species
 {
-    public class AilurusFulgens : Scolopax
+    public class AilurusFulgens : Ailurus
     {
-        public AilurusFulgens(string name, string size) : base(name, size)
+        public AilurusFulgens(string name) : base(name)
         {
             //dont need to do anything here!
         }

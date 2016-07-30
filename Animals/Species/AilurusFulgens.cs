@@ -1,12 +1,11 @@
-using Zoolandia.Genera;
-//red panda
+using Zoolandia.Animals.Genera;
 namespace Zoolandia.Animals.Species
 {
     public class AilurusFulgens : Ailurus
     {
         public AilurusFulgens(string name) : base(name)
         {
-            //dont need to do anything here!
+            this.CommonName = "Red Panda";
         }
         public override string Eat(int numberOfFoodz)
         {

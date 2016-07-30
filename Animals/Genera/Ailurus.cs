@@ -1,4 +1,3 @@
-//red panda
 namespace Zoolandia.Animals.Genera
 {
     public abstract class Ailurus : Animal

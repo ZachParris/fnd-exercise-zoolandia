@@ -4,9 +4,9 @@ using Zoolandia.Animals.Genera;
 namespace Zoolandia.Animals.Species
 {
     //Woofs
-    public class CanisLupus : Canis
+    public class Lupus : Canis
     {
-           public CanisLupus(string name) : base(name)
+           public Lupus(string name) : base(name)
         {
             //dont need to do anything here!
         }

@@ -1,5 +1,3 @@
-//wolf!
-
 namespace Zoolandia.Animals.Genera
 {
     public abstract class Canis : Animal

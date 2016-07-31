@@ -9,8 +9,12 @@ namespace Zoolandia.Animals.Genera
             this.CommonName = "Ocelot";
             this.ScientificName = "Felis Paradalis";
         }
-        public string Growl(){
+        private string Growl()
+        {
             return "The " + this.CommonName + " doesn't like you.";
+        }
+        public void MakeSound() {
+            string sound = Growl();
         }
     }
 }

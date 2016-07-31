@@ -16,12 +16,8 @@ namespace Zoolandia.Animals.Genera
             return animalSleep + "Zzz";
         }
 
-        public string Hunt(){
-            return "The " + this.CommonName + " bear will eat you if only if its hungry!";
-        }
-
         public string Climb(){
-            return "She's a climber";
+            return "Nothing to climb!";
         }
 
     }

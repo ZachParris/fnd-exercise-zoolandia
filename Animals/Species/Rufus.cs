@@ -4,11 +4,16 @@ namespace Zoolandia.Animals.Genera
     {
         public Rufus (string name) : base(name)
         {
-            this.CommonName = "American Black Bear";
-            this.ScientificName = "Ursus americanus";
+            this.CommonName = "Bobcat";
+            this.ScientificName = "Felis Rufus";
         }
-        public string Solo(){
+        private string solitary()
+        {
             return this.Name + " is usually solitary.";
+        }
+        public void Solo()
+        {
+            solitary();
         }
     }
 }

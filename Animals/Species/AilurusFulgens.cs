@@ -13,7 +13,8 @@ namespace Zoolandia.Animals.Species
             return animalEat + "nom nom nom";
         }
 
-        public string Eat(){
+        public string Eat()
+        {
             return "I don't know what I just ate, but it was good";
         }
 

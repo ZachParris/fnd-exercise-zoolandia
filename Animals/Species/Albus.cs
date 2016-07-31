@@ -1,4 +1,5 @@
 namespace Zoolandia.Animals.Genera
+
 {
     public class Albus : Canis, ITalk
     {
@@ -7,10 +8,16 @@ namespace Zoolandia.Animals.Genera
             this.CommonName = "Turukhan wolf";
             this.ScientificName = "Canis lupus albus";
         }
-        public string Howl(){
-            return "Howwwwwwllll!";
+        private void howl(){
         }
-        public string Pack(){
+
+        public void MakeSound() 
+        {
+            howl();
+        }
+
+        public string Solo()
+        {
             return this.Name + " is a pack animal";
         }
     }

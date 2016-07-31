@@ -4,14 +4,20 @@ namespace Zoolandia.Animals.Genera
     {
         public Arctos(string name) : base(name)
         {
-            this.CommonName = "Black Bear";
+            this.CommonName = "Grizzly Bear";
             this.ScientificName = "Ursus Arctos";
         }
-        public string Solo(){
+        public string Solo()
+        {
             return "The " + this.CommonName + " rolls solo";
         }
-        public string Roar(){
+        private string Roar()
+        {
             return "Roar";
+        }
+        public void MakeSound()
+        {
+            Roar();
         }
     
     }

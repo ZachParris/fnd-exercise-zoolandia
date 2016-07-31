@@ -1,20 +1,25 @@
-// using Zoolandia;s
+// using Zoolandia.Animals.Species;
+using System.Collections.Generic;
     
 
 namespace Zoolandia.Habitats
 {
-    
-} public class Habitat 
-{
-     public Habitat(string name) 
-        {
-            this.Name = name;
-        }
-        public string Name { get; set; }
+    public class Habitat : IAnimal
+    {
+        public Habitat(string name) 
+            {
+                this.Name = name;
+                this.inhabitants = new List<IAnimal>();
+            }
+            // private string GetScientificName()
+            public string Name { get; set; }
 
-    // Instantiated a new list, which will contain animals.
-    // You will add animals at run time (i.e. in `static void Main()
-    // `)
-    public List<Animal> inhabitants = new List<Animal>();
-    // public string public_name { get; }
+        private List<IAnimal> inhabitants {get; set;}
+        
+        public bool goodForHiking {get; set;}
+        public virtual string visibility()
+        {
+            return "How far can you see?";
+        }
+    }
 }

@@ -1,8 +1,8 @@
-namespace Zoolandia{
-    interface ITalk{
-        string Growl();
-        string Howl();
-        string Roar();
+namespace Zoolandia
+{
+    interface ITalk
+    {
+        void MakeSound();
     }
     
 }

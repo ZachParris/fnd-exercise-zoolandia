@@ -1,6 +1,6 @@
 namespace Zoolandia.Animals
 {
-    public abstract class Animal
+    public abstract class Animal : IAnimal
     {
         public Animal (string name)
         {
@@ -32,8 +32,11 @@ namespace Zoolandia.Animals
         {
             return "Zzz ";
         }
+        public string GetScientificName()
+        {
+            return this.ScientificName;
+        }
     }
 }
 
 
-//

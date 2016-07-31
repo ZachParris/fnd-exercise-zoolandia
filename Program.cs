@@ -1,5 +1,9 @@
 ﻿using System;
-using Zoolandia.Species;
+// using System.Collections.Generic;
+using Zoolandia.Animals;
+using Zoolandia.Animals.Species;
+using Zoolandia.Animals.Genera;
+using Zoolandia.Habitats;
 
 namespace Zoolandia
 {
@@ -7,18 +11,43 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            AilurusFulgens redPanda = new AilurusFulgens("Steve", "Little");
-            redPanda.Name = "Steve";
-            string response = redPanda.Eat(5);
+            Albus turukhanWolf = new Albus("Turukhan Wolf");
+            Lupus canis = new Lupus("Gray Wolf");
+            Lycaon easternWolf = new Lycaon("Eastern Wolf");
+            Savannah wolfSavannah = new Savannah("Savannah");
+            
+            wolfSavannah.inhabitants.Add(turukhanWolf);
+            wolfSavannah.inhabitants.Add(canis);
+            wolfSavannah.inhabitants.Add(easternWolf);
 
-            Console.WriteLine(redPanda.Name + " says " + response);
+            Console.WriteLine ("Habitat: " + wolfSavannah.Name);
 
-            AilurusFulgens Joe = new AilurusFulgens("Joe", "big");
-            Console.WriteLine(Joe.Welcome("Joe"));
-            Console.WriteLine(Joe.Name);
+            Americanus blackBear = new Americanus("American Black Bear");
+            Arctos grizzlyBear = new Arctos("Grizzly Bear");
+            Maritimus polarBear = new Maritimus("Polar Bear");
+            Forests bearForest =  new Forests("Forest");
 
-            Mississippiensis Alligator = new Mississippiensis("Gator", "Big");
-            Console.WriteLine(Alligator.Name);
+            bearForest.inhabitants.Add(blackBear);
+            bearForest.inhabitants.Add(grizzlyBear);
+            bearForest.inhabitants.Add(polarBear);
+
+            Console.WriteLine ("Habitat: " + bearForest.Name);
+
+            Rufus bobCat = new Rufus("Bobcat");
+            Paradalis ocelot = new Paradalis("Ocelot");
+            Margarita sandCat = new Margarita("Sand Cat");
+            Caves catCaves = new Caves("Caves");  
+
+            catCaves.inhabitants.Add(bobCat);
+            catCaves.inhabitants.Add(ocelot);
+            catCaves.inhabitants.Add(sandCat);
+            
+            Console.WriteLine ("Habitat: " + catCaves.Name); 
+
+
+            
+
+            
 
             Console.ReadLine();
         }

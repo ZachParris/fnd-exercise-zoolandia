@@ -9,8 +9,13 @@ namespace Zoolandia.Animals.Species
             this.CommonName = "Eastern Wolf";
             this.ScientificName = "Canis lycaon";
         }
-        public string Howl(){
-            return "arrroooooooo!!";
+        private string Howl()
+        {
+            return "Howls";
+        }
+        public void MakeSound()
+        {
+            Howl();
         }
     }
 }

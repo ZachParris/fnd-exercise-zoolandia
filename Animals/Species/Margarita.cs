@@ -7,7 +7,8 @@ namespace Zoolandia.Animals.Genera
             this.CommonName = "Sand Cat";
             this.ScientificName = "Felis Margarita";
         }
-        public string Climb(){
+        public string Climb()
+        {
             return "The " + this.CommonName + " loves to climb!";
         }
     }

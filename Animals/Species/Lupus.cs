@@ -8,7 +8,8 @@ namespace Zoolandia.Animals.Species
     {
            public Lupus(string name) : base(name)
         {
-            //dont need to do anything here!
+            this.CommonName = "Gray wolf";
+            this.ScientificName = "Canis lupus";
         }
         public override string Eat(int numberOfFoodz)
         {

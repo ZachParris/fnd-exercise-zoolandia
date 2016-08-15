@@ -1,6 +1,6 @@
 namespace Zoolandia
 {
-    interface IAnimal
+    public interface IAnimal
     {
         string GetScientificName();
     }

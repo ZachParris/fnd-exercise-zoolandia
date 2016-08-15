@@ -6,56 +6,84 @@ using Zoolandia.Animals;
 
 namespace Zoolandia
 {
-    public class Program
+    public class Program 
     {
         public static void Main(string[] args)
         {
+            //************WOLVES!!***************//
+
             //Instantiating each species in Wolf Genus
             Albus turukhanWolf = new Albus("Turukhan Wolf");
             Lupus canis = new Lupus("Gray Wolf");
             Lycaon easternWolf = new Lycaon("Eastern Wolf");
-            //Setting Habitat for wolves
-            Savannah wolfSavannah = new Savannah("Savannah");
-            
-            wolfSavannah.inhabitants.Add(turukhanWolf);
-            wolfSavannah.inhabitants.Add(canis);
-            wolfSavannah.inhabitants.Add(easternWolf);
 
-            Console.WriteLine ("Habitat: " + wolfSavannah.Name);
-            //Display animals in Habitat
-            IAnimal[] WolfSavannah = {turukhanWolf, canis, easternWolf};
-            wolfSavannah.inhabitants.AddRange(WolfSavannah);
-            foreach (var inhabitants in wolfSavannah.inhabitants)
+            //Setting Habitat for wolves
+            Savannah wolf_Savannah = new Savannah("Savannah");
+            
+            //Add each animal to List
+            wolf_Savannah.inhabitants.Add(turukhanWolf);
+            wolf_Savannah.inhabitants.Add(canis);
+            wolf_Savannah.inhabitants.Add(easternWolf);
+
+            //Output Habitat : Name and then it's assigned animals
+            Console.WriteLine ("Habitat: " + wolf_Savannah.Name);
+            //Add and Output animals in Habitat
+            Animal[] WolfSavannah = {turukhanWolf, canis, easternWolf};
+            wolf_Savannah.inhabitants.AddRange(WolfSavannah);
+            foreach (var animals in WolfSavannah)
                 {
-                    Console.WriteLine("\n" + inhabitants);
+                    Console.WriteLine(animals.Name);
                 }
+
+            //**********BEARS!!!*************//    
 
             //Instantiating each species in Bear Genus
             Americanus blackBear = new Americanus("American Black Bear");
             Arctos grizzlyBear = new Arctos("Grizzly Bear");
             Maritimus polarBear = new Maritimus("Polar Bear");
+
             //Setting Habitat for bears
-            Forests bearForest =  new Forests("Forest");
+            Forests bear_Forest =  new Forests("Forest");
 
-            bearForest.inhabitants.Add(blackBear);
-            bearForest.inhabitants.Add(grizzlyBear);
-            bearForest.inhabitants.Add(polarBear);
+            //Add each animal to List
+            bear_Forest.inhabitants.Add(blackBear);
+            bear_Forest.inhabitants.Add(grizzlyBear);
+            bear_Forest.inhabitants.Add(polarBear);
+            Console.WriteLine("\r");
+            
+            //Output Habitat : Name and then it's assigned animals
+            Console.WriteLine ("Habitat: " + bear_Forest.Name);
+            Animal[] BearForrest = {blackBear, grizzlyBear, polarBear};
+            bear_Forest.inhabitants.AddRange(BearForrest);
+            foreach (var animals in BearForrest)
+                {
+                    Console.WriteLine(animals.Name);
+                }
 
-            Console.WriteLine ("Habitat: " + bearForest.Name);
-
+            //********BIG CATS!**********//
 
             //Instantiating each species in Cat Genus
             Rufus bobCat = new Rufus("Bobcat");
             Paradalis ocelot = new Paradalis("Ocelot");
             Margarita sandCat = new Margarita("Sand Cat");
+
             //Setting Habitat for cats
-            Caves catCaves = new Caves("Caves");  
+            Caves cat_Caves = new Caves("Caves");  
 
-            catCaves.inhabitants.Add(bobCat);
-            catCaves.inhabitants.Add(ocelot);
-            catCaves.inhabitants.Add(sandCat);
+            //Add each animal to List
+            cat_Caves.inhabitants.Add(bobCat);
+            cat_Caves.inhabitants.Add(ocelot);
+            cat_Caves.inhabitants.Add(sandCat);
+            Console.WriteLine("\r");
 
-            Console.WriteLine ("Habitat: " + catCaves.Name); 
+            //Output Habitat : Name and then it's assigned animals
+            Console.WriteLine ("Habitat: " + cat_Caves.Name); 
+            Animal[] CatCaves = {bobCat, ocelot, sandCat};
+            cat_Caves.inhabitants.AddRange(CatCaves);
+            foreach (var animals in CatCaves)
+                {
+                    Console.WriteLine(animals.Name);
+                }
 
 
             Console.ReadLine();

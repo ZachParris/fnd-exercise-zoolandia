@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace Zoolandia.Animals
 {
     public abstract class Animal : IAnimal

@@ -2,7 +2,8 @@
 {
     public class Forests : Habitat
     {
-        public Forests(string name): base(name)
+
+        public Forests(string name) : base(name)
         {
             this.Name = "Forests";
             this.goodForHiking = true;
